@@ -1,1 +1,1 @@
-![Main](https://github.com/user-attachments/assets/e6a6c8f8-96fa-49e5-a118-6942c752bb03)
+<img width="458" alt="Captura de pantalla 2025-05-21 203858" src="https://github.com/user-attachments/assets/f446b035-d8f4-42a1-965f-a20fea7245be" />
