@@ -2,15 +2,12 @@ import java.util.ArrayList;
 
 public class Hamburguesa {
 
-    private Pan pan;
+    private final Pan pan;
     private ArrayList<Medallon> medallones = new ArrayList<>();
     private ArrayList<Extra> extras = new ArrayList<>();
 
-    public Hamburguesa() {
-    }
-
-    public void agregarPan(Pan pan){
-        this.pan = pan;
+    public Hamburguesa(Pan unPan) {
+        this.pan = unPan;
     }
 
     public void agregarMedallon(Medallon medallon){
@@ -30,7 +27,7 @@ public class Hamburguesa {
     }
 
     public boolean esValida(){
-        return this.getCantMedallones() >= this.getCantExtras() && this.pan != null;
+        return this.getCantMedallones() >= this.getCantExtras() && !this.medallones.isEmpty();
     }
 
     private int getCantMedallones(){

@@ -12,13 +12,12 @@ public class Main {
         // Puede ser facturada ok y tendrá un precio total de $9850.
 
         Pan panPapa = new Pan("Pan de papa", 4500);
-        Medallon medallonPollo = new Medallon(1500, "Medallon de pollo");
-        Medallon medallonCarne = new Medallon(2900, "Medallon de carne");
-        Extra cheddar = new Extra("Cheddar", 600);
-        Extra berenjena = new Extra("Berenjena", 350);
+        Medallon medallonPollo = new Medallon(54);
+        Medallon medallonCarne = new Medallon(2900);
+        Extra cheddar = new Extra(600);
+        Extra berenjena = new Extra( 350);
 
-        Hamburguesa hamb01 = new Hamburguesa();
-        hamb01.agregarPan(panPapa);
+        Hamburguesa hamb01 = new Hamburguesa(panPapa);
         hamb01.agregarMedallon(medallonPollo);
         hamb01.agregarMedallon(medallonCarne);
         hamb01.agregarExtra(cheddar);
@@ -36,10 +35,9 @@ public class Main {
         // Se debería sacar un ingrediente extra o agregar un medallón.
 
         Pan panCampo = new Pan("Pan de campo", 5500);
-        Medallon medallonVegetariano = new Medallon(1890, "Medallon vegetariano");
+        Medallon medallonVegetariano = new Medallon(1890);
 
-        Hamburguesa hamb02 = new Hamburguesa();
-        hamb02.agregarPan(panCampo);
+        Hamburguesa hamb02 = new Hamburguesa(panCampo);
         hamb02.agregarMedallon(medallonVegetariano);
         hamb02.agregarExtra(berenjena);
         hamb02.agregarExtra(cheddar);

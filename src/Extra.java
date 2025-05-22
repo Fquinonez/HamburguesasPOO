@@ -1,22 +1,7 @@
-public class Extra {
+public class Extra extends Componente{
 
-    private String tipoExtra;
-    private double precio;
-
-    public Extra(String tipoExtra, double precio) {
-        this.tipoExtra = tipoExtra;
-        this.precio = precio;
+    Extra(double precio) {
+        super(precio);
     }
 
-    public String getTipoExtra() {
-        return tipoExtra;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
 }
